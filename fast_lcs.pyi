@@ -1,0 +1,3 @@
+def compute_lcs_similarity(
+    source: str, target: str, length_of_prefixes_of_target: list[int]
+) -> list[float]: ...

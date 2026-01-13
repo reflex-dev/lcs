@@ -3,13 +3,17 @@ requires = ["maturin>=1.11,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "lcs"
-requires-python = ">=3.8"
+name = "fast-lcs"
+description = "A fast implementation of the longest common subsequence."
+requires-python = ">=3.13"
 classifiers = [
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
+license = { text = "MIT" }
+readme = "README.md"
+
 [tool.maturin]
 features = ["pyo3/extension-module"]

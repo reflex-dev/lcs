@@ -3,7 +3,7 @@ requires = ["maturin>=1.11,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "fast-lcs"
+name = "offline-lcs"
 description = "A fast implementation of the longest common subsequence."
 requires-python = ">=3.13"
 classifiers = [

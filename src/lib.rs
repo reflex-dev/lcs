@@ -50,7 +50,7 @@ fn compute_lcs_similarity(
 }
 
 #[pymodule(gil_used = false)]
-fn fast_lcs(m: &Bound<'_, PyModule>) -> PyResult<()> {
+fn offline_lcs(m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(compute_lcs_similarity, m)?)?;
     Ok(())
 }
